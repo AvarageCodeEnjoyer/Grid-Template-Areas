@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+} */
+
+.container {
+  display: grid;
+/*   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(4, 1fr); */
+  grid-template-areas: 
+  'one one one one one one one one one one'
+  'two three three three three three four four four four'
+  'two three three three three three four four four four'
+  'two three three three three three four four four four'
+  'two three three three three three four four four four'
+  'two five five five five five five five five five';
+  width: 100%;
+  height: 100%;
+}
+
+.innerContainer {
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+/* .innerContainer:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 11;
+}
+
+.innerContainer:nth-child(2) {
+  grid-area: 2 / 1 / 5 / 2;
+}
+
+.innerContainer:nth-child(3) {
+  grid-area: 2 / 2 / 4 / 7;
+}
+
+.innerContainer:nth-child(4) {
+  grid-area: 2 / 7 / 4 / 11;
+}
+
+.innerContainer:nth-child(5) {
+  grid-area: 4 / 2 / 5 / 11;
+} */
+
+.innerContainer:nth-child(1) {
+  grid-area: one;
+}
+
+.innerContainer:nth-child(2) {
+  grid-area: two;
+}
+
+.innerContainer:nth-child(3) {
+  grid-area: three;
+}
+
+.innerContainer:nth-child(4) {
+  grid-area: four;
+}
+
+.innerContainer:nth-child(5) {
+  grid-area: five;
+}
